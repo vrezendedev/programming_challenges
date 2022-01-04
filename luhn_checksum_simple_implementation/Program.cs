@@ -8,7 +8,7 @@ namespace ConsoleApp1
 {
     class Program
     {
-        //The Luhn Checksum Formula... very simple implemantation
+        //The Luhn Checksum Formula... very simple implementation
         static void Main(string[] args)
         {
             string number;
@@ -39,7 +39,7 @@ namespace ConsoleApp1
                 {
                     digit = digit * 2;
                     
-                    if(digit > 10)
+                    if(digit >= 10)
                     {
                         digit = 1 + (digit % 10);
                     }
